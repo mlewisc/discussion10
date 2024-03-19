@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <a href = "#main" class="skip-to-main">Skip to Main Content</a>
+    
+    <!-- Back to the top floating button -->
+    <button id="top" class="top-button" onclick="backtoTop()"  tabindex="0">Top</button>
+    
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>  
+                </ul>
+            </nav>
+        </header>
+
+    
+    
+    <main>
+        <!-- Hero Section-->
+        <div class="hero-image">
+            <div class="hero-text">
+                <p class="preheading">Common Class Project</p>
+                <h1>Experience, <br> Love <br> & Eat </h1>
+            </div>
+            <div class="btn-container">
+                    <p class="body-small dark-background-font-color">Scroll to learn more</p>
+            </div>
+        </div>
+        
+        <!-- First Content Section-->
+        <div id="main">
+            <h2>Hello there! <br>Welcome to Experience, Love & Eat</h2>
+            <p>This is your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
+
+        </div>
+        <!-- Discussion Addition -->
+        <div>
+            <h2>Use JavaScript to display the following information here:</h2>
+	        <p>
+                The URL of this page is: <span id = "URL"></span><br/>
+                The number of H2 items for this page: <span id = "items"></span><br/>
+                The current date/time is: <span id = "time"></span><br/>
+            </p>
+
+		    <p oncopy="copyFunction()" value="Thank you for visiting">Thank you for visiting!</p>
+
+	        
+            <div id="cheer"></div>
+        </div>
+
+
+        <!-- Second Content Section-->
+        <div>
+            <h2>Explore</h2>
+            <p>
+                Visit all our pages to learn more about the amazing things we can experience, the things we love, and the things we can eat - which are also things we experience and love!
+            </p>
+            <!-- Cards Area--> 
+            <div class="card-container">
+                <!-- First Card-->
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/dog.jpeg" alt="dog">
+                        <h3>Pets</h3>
+                        <p>Learn more about some of the cutest animals you will ever see.</p>
+
+                        <button onclick="goToPetsPage()">Visit Pets</button>
+                    </div>
+                </div>
+
+                <!-- Second Card-->
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/travel.png" alt="hand holding a mini world globe">
+                        <h3>Travel</h3>
+                        <p>Learn more about some of the most exquisite locations on Earth.</p>
+
+                        <button onclick="goToTravelPage()">Visit Travel</button>
+
+                    </div>
+                </div>
+
+                <!-- Third Card-->
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/recipes.png" alt="pancakes topped with fruits">
+                        <h3>Recipes</h3>
+                        <p>Explore some incredible recipes to create an delicious dinner.</p>
+
+                        <button onclick="goToRecipesPage()">Visit Recipes</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section-->
+    <footer>
+       <p>SI 339: Web Design, Development, and Asccessibility <br>
+        Winter 2024 - Common Class Project <br>
+        &copy; Maiara Lewis Cipriano</p>
+    </footer>
+</body>
+</html>

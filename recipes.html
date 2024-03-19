@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <title>Recipes</title>
+</head>
+<body>
+    <a href = "#main" class="skip-to-main">Skip to Main Content</a>
+    
+    <!-- Back to the top floating button -->
+    <button id="top" class="top-button" onclick="backtoTop()"  tabindex="0">Top</button>
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Hero Section-->
+        <div class="hero-image hero-recipes">
+            <div class="hero-text">
+                <p class="preheading">Common Class Project</p>
+                <h1>Recipes</h1>
+            </div>
+        </div>
+
+        <!--First Section-->
+        <div id="main">
+            <h2>Fill your table</h2>
+            <p>These meals are on the table in no time—and taste delicious, too.
+            <br> Find and share everyday cooking inspiration, discover recipes, cooks, videos, and how-tos based on the food you love.</p>
+        </div>
+
+        <!--Second Section-->
+        <div>
+            <h2>Recipe List</h2>
+            <div>
+                <!--First Item -->
+                <div class="horizontal-card">
+                    <img src="images/spaghettii.jpeg" alt="plate of spaghetti">
+
+                    <div class="description">
+                        <h3> <a href= "#spaghetti">Spaghetti</a></h3>
+                        <p>Dinner</p>
+                    </div>
+                </div>
+
+                <!--Second Item -->
+                <div class="horizontal-card">
+                    <img src="images/salad_ingridients.webp" alt="a plate with unmixed salad ingridients">
+
+                    <div class="description">
+                        <h3><a href="#salad">Mediterranean Salad</a></h3>
+                        <p>Side dish</p>
+                    </div>
+                </div>
+
+                <!--Third Item -->
+                <div class="horizontal-card">
+                    <img src="images/h-chocolatecake.jpeg" alt="a chocolate cake">
+
+                    <div class="description">
+                        <h3><a href="#cake">Triple Chocolate Cake</a></h3>
+                        <p>Dessert</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Third Section -->
+        <div>
+            <h2>Dinners</h2>
+
+            <!--Dinner #1-->
+            <div id="spaghetti">
+                <h3>Spaghetti</h3>
+                <p>Spaghetti is a long, thin, solid, cylindrical pasta. It is a staple food of traditional Italian cuisine. Like other pasta, spaghetti is made of milled wheat, water, and sometimes enriched with vitamins and minerals. Italian spaghetti is typically made from durum-wheat semolina.</p>
+
+                <!-- Food Gallery-->
+                <div class="grid-gallery recipe">
+        
+                    <img id="s1" class="photo1" src="images/spaghetti_sauce.jpeg" alt="Brown labradoodle wearing colorful lei">
+                    <div class="photos">
+                        <img id="s1-t1" class="thumb-img clicked" src="images/spaghetti_sauce.jpeg" alt="Brown labradoodle wearing colorful lei">
+                        <img id="s1-t2" class="thumb-img" src="images/two_spaghetti_plates.jpeg" alt="two spaghetti two_spaghetti_plates">
+                        <img id="s1-t3" class="thumb-img" src="images/spaghetti_plate.jpeg" alt="white plate of spaghetti">
+                        <img id="s1-t4" class="thumb-img" src="images/pouring-spaghetti.jpeg" alt="an arm pouring spaghetti on a plate from a skillet">
+                    </div>
+
+                </div>
+
+                <!-- Food Details -->
+                <div class="food-details-grid">
+                    <div class="description details">
+                        <h4>Origin</h4>
+                        <p>Italian</p>
+                    </div>
+
+                    <div class="description details">
+                        <h4>Source</h4>
+                        <p><a href="https://www.inspiredtaste.net/38940/spaghetti-with-meat-sauce-recipe/">Inspired Taste</a></p>
+                    </div>
+
+                    <div class="description details">
+                        <h4>Category</h4>
+                        <p>Main Dish</p>
+                    </div>
+                </div>
+
+                <!-- Food Ingridients -->
+                <div>
+                    <h4>Ingridients</h4>
+                    <ul>
+                        <li>1 pound lean ground meat like beef, turkey, chicken or lamb</li>
+                        <li>3 tablespoons olive oil</li>
+                        <li>1 cup (130 grams) chopped onion</li>
+                        <li>3 garlic cloves, minced (1 tablespoon)</li>
+                        <li>2 tablespoons tomato paste</li>
+                        <li>1/2 teaspoon dried oregano</li>
+                        <li>Pinch crushed red pepper flakes</li>
+                        <li>1 cup water, broth or dry red wine</li>
+                        <li>1 (28-ounce) can crushed tomatoes</li>
+                        <li>Salt and fresh ground black pepper</li>
+                        <li>Handful fresh basil leaves, plus more for serving</li>
+                        <li>12 ounces dried spaghetti or favorite pasta shape</li>
+                        <li>1/2 cup shredded parmesan cheese</li>
+                   </ul>
+                </div>
+
+                <!-- Food Directions -->
+                <div>
+                    <h4>Directions</h4>
+                    <ol>
+                        <li>
+                            Heat the oil in a large pot over medium-high heat (we use a Dutch oven). Add the meat and cook until browned, about 8 minutes. As the meat cooks, use a wooden spoon to break it up into smaller crumbles.</li>
+                        
+                        <li>
+                            Add the onions and cook, stirring every once and a while, until softened, about 5 minutes.
+                        </li>
+                    
+                        <li>
+                            Stir in the garlic, tomato paste, oregano, and red pepper flakes and cook, stirring continuously for about 1 minute.
+                        </li>
+                    
+                        <li>
+                            Pour in the water and use a wooden spoon to scrape up any bits of meat or onion stuck to the bottom of the pot. Stir in the tomatoes, 3/4 teaspoon of salt, and a generous pinch of black pepper. Bring the sauce to a low simmer. Cook, uncovered, at a low simmer for 25 minutes. As it cooks, stir and taste the sauce a few times so you can adjust the seasoning accordingly (see notes for suggestions).
+                        </li>
+                    
+                        <li>
+                            About 15 minutes before the sauce finishes cooking, bring a large pot of salted water to the boil, and then cook pasta according to package directions, but check for doneness a minute or two before the suggested cooking time.
+                        </li>
+                    
+                        <li>
+                            Take the sauce off of the heat, and then stir in the basil. Toss in the cooked pasta, and then leave for a minute so that the pasta absorbs some of the sauce. Toss again, and then serve with parmesan sprinkled on top.
+                        </li>
+                   </ol>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Fourth Section -->
+        <div>
+            <h2>Side Dishes</h2>
+
+            <!--Side Dish #1-->
+            <div id="salad">
+                <h3>Mediterranean Salad</h3>
+                <p>Mediterranean salad is a perfectly balanced appetizer or side dish with so many of the Mediterranean flavors loved by many.</p>
+
+                <!-- Food Gallery-->
+                <div class="grid-gallery recipe">
+        
+                    <img id="s2" class="photo1" src="images/salad.webp" alt = "salad in a white bowl">
+                    <div class="photos">
+                        <img id="s2-t1" class="thumb-img clicked" src="images/salad.webp" alt = "salad in a white bowl">
+                        <img id="s2-t2" class="thumb-img" src="images/salad_ingridients.webp" alt="a plate with unmixed salad ingridients">
+                        <img id="s2-t3" class="thumb-img" src="images/salad-bowl.png" alt="a bowl of a colorful salad">
+                        <img id="s2-t4" class="thumb-img" src="images/salad_plate.webp" alt="salad in a serving plate with a spoon">
+                    </div>
+                </div>
+
+                <!-- Food Details -->
+                <div class="food-details-grid">
+                    <div class="description details">
+                        <h4>Origin</h4>
+                        <p>Mediterranean</p>
+                    </div>
+
+                    <div class="description details">
+                        <h4>Source</h4>
+                        <p><a href="https://www.simplejoy.com/mediterranean-salad/">Simple Joy</a></p>
+                    </div>
+
+                    <div class="description details">
+                        <h4>Category</h4>
+                        <p>Side Dish</p>
+                    </div>
+                </div>
+
+                <!-- Food Ingridients -->
+                <div>
+                    <h4>Ingridients</h4>
+                    <ul>
+                        <li>1 English cucumber</li>
+                        <li>4 Roma tomatoes</li>
+                        <li>1/2 red onion</li>
+                        <li>1 cup kalamata olives</li>
+                        <li>4 ounces feta cheese</li>
+                        <li>2 tablespoons olive oil</li>
+                        <li>2 tablespoons red wine vinegar</li>
+                        <li>1 teaspoon Greek oregano</li>
+                        <li>1/2 teaspoon kosher salt</li>
+                        <li>Fresh ground black pepper</li>
+                   </ul>
+                </div>
+
+                <!-- Food Directions -->
+                <div>
+                    <h4>Directions</h4>
+                    <ol>
+                        <li>Cut the Englsih Cucumber into 1/2 inch half moons.</li>
+                        <li>Cut the Roma tomatoes in half and then cut into 1/2 inch pieces.</li>
+                        <li>Cut the read onion into thin slices.</li>
+                        <li>Cut the kalamata olives in half.</li>
+                        <li>Cut the feta cheese into 1/2 inch cubes.</li>
+                        <li>Combine the cucumbers, tomatoes, onion, and feta in a large bowl.
+                        </li>
+                        <li>Season with the olive oil, red wine vinegar, oregano, salt and pepper.</li>
+                        <li>Toss to combine and serve.</li>
+                   </ol>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Fifth Section -->
+        <div>
+            <h2>Dessert</h2>
+
+            <!--Dessert #1-->
+            <div id="cake">
+                <h3>Triple Chocolate Cake</h3>
+                <p>With a super moist crumb and fudgy, yet light texture, this chocolate cake recipe will soon be your favorite too. Top with chocolate buttercream and chocolate chips for 3x the chocolate flavor. You can also prepare this chocolate layer cake as a sheet cake, too.</p>
+
+                <!-- Food Gallery-->
+                <div class="grid-gallery recipe">
+        
+                    <img id="s3" class="photo1" src="images/chocolate_cake.jpeg" alt = "a chocolate cake decorated with chocolate chips">
+                    <div class="photos">
+                        <img id="s3-t1" class="thumb-img clicked" src="images/chocolate_cake.jpeg" alt = "a chocolate cake decorated with chocolate chips">
+                        <img id="s3-t2" class="thumb-img" src="images/chocolate-batter.png" alt="chocolate cake batter in a bowl with a whisk">
+                        <img id="s3-t3" class="thumb-img" src="images/cake-slice.png" alt="a slice of a chocolate cake parted with a fork">
+                        <img id="s3-t4" class="thumb-img" src="images/zoom_chocolate_cake.jpeg" alt="zoomed image of a chocolate cake with chocolate chips">
+                    </div>
+                </div>
+
+                <!-- Food Details -->
+                <div class="food-details-grid">
+                    <div class="description details">
+                        <h4>Origin</h4>
+                        <p>American</p>
+                    </div>
+
+                    <div class="description details">
+                        <h4>Source</h4>
+                        <p><a href="https://sallysbakingaddiction.com/triple-chocolate-layer-cake/">Sally's Baking Recipes</a></p>
+                    </div>
+
+                    <div class="description details">
+                        <h4>Category</h4>
+                        <p>Side Dish</p>
+                    </div>
+                </div>
+
+                <!-- Food Ingridients -->
+                <div>
+                    <h4>Ingridients</h4>
+                    <h5>Cake</h5>
+                    <ul>
+                        <li>1 and 3/4 cups (219g) all-purpose flour</li>
+                        <li>3/4 cup (62g) unsweetened natural cocoa powder</li>
+                        <li>1 and 3/4 cups (350g) granulated sugar</li>
+                        <li>2 teaspoons baking soda</li>
+                        <li>1 teaspoon baking powder</li>
+                        <li>1 teaspoon salt</li>
+                        <li>2 teaspoons espresso powder (optional)</li>
+                        <li>1/2 cup (120ml) vegetable oil (or canola oil or melted coconut oil)
+                        </li>
+                        <li>2 large eggs, at room temperature</li>
+                        <li>2 teaspoons pure vanilla extract</li>
+                        <li>1 cup (240ml) buttermilk, at room temperature</li>
+                        <li>1 cup (240ml) freshly brewed strong hot coffee (regular or decaf)
+                        </li>
+                   </ul>
+
+                   <h5>Chocolate Buttercream</h5>
+                   <ul>
+                        <li>
+                            1 and 1/4 cups (2.5 sticks or 290g) unsalted butter, softened to room temperature
+                        </li>
+                        <li>
+                            3 and 1/2 cups (420g) confectioners’ sugar
+                        </li>
+                        <li>
+                            3/4 cup (65g) unsweetened cocoa powder (natural or dutch process)
+                        </li>
+                        <li>
+                            3–5 Tablespoons (45-75ml) heavy cream (or half-and-half or milk), at room temperature
+                        </li>
+                        <li>1/4 teaspoon salt</li>
+                        <li>1 teaspoon pure vanilla extract</li>
+                        <li>Optional for decoration: semi-sweet chocolate chips</li>
+                   </ul>
+                </div>
+
+                <!-- Food Directions -->
+                <div>
+                    <h4>Directions</h4>
+                    <ol>
+                        <li>
+                            Preheat oven to 350°F (177°C). Grease two 9-inch cake pans, line with parchment paper rounds, then grease the parchment paper. Parchment paper helps the cakes seamlessly release from the pans. (If it’s helpful, see this parchment paper rounds for cakes video & post.)
+                        </li>
+                        <li>
+                            Make the cake: Whisk the flour, cocoa powder, sugar, baking soda, baking powder, salt, and espresso powder (if using) together in a large bowl. Set aside. Using a handheld or stand mixer fitted with a whisk attachment (or you can use a whisk) mix the oil, eggs, and vanilla together on medium-high speed until combined. Add the buttermilk and mix until combined. Pour the wet ingredients into the dry ingredients, add the hot water/coffee, and whisk or beat on low speed until the batter is completely combined. Batter is thin.
+                        </li>
+                        <li>
+                            Divide batter evenly between pans. Bake for 23-26 minutes or until a toothpick inserted in the center comes out clean. Baking times vary, so keep an eye on yours. The cakes are done when a toothpick inserted in the center comes out clean. (Note: Even if they’re completely done, the cooled cakes may *slightly* sink in the center. Cocoa powder is simply not as structurally strong as all-purpose flour and can’t hold up to all the moisture necessary to make a moist tasting chocolate cake. It’s normal!)
+                        </li>
+                        <li>
+                            Remove the cakes from the oven and set on a wire rack. Allow to cool completely in the pan.
+                        </li>
+                        <li>
+                            <b>Make the buttercream: </b>With a handheld or stand mixer fitted with a paddle attachment, beat the butter on medium speed until creamy – about 2 minutes. Add confectioners’ sugar, cocoa powder, 3 Tablespoons heavy cream, salt, and vanilla extract. Beat on low speed for 30 seconds, then increase to high speed and beat for 1 full minute. Do not over-whip. Add 1/4 cup more confectioners’ sugar or cocoa powder if frosting is too thin or 1-2 more Tablespoons of cream if frosting is too thick. (I usually add 1 more.) Taste. Add another pinch of salt if desired. 
+                        </li>
+                        <li>
+                            <b>Assemble and frost: </b> If cooled cakes are domed on top, use a large serrated knife to slice a thin layer off the tops to create a flat surface. This is called “leveling” the cakes. Discard or crumble over finished cake. Place 1 cake layer on your cake stand or serving plate. Evenly cover the top with frosting. Top with 2nd layer and spread remaining frosting all over the top and sides. I always use an icing spatula and bench scraper for the frosting. Garnish with chocolate chips, if desired.
+                        </li>
+                        <li>
+                            Refrigerate uncovered cake for at least 30-60 minutes before slicing to help set the shape. After that, you can serve the cake or continue refrigerating for up to 4–6 hours before serving. Cake can be served at room temperature or chilled.
+                        </li>
+                        <li>
+                            Cover leftover cake tightly and store in the refrigerator for 5 days. I like using a cake carrier for storing and transporting.
+                        </li>
+                   </ol>
+                </div>
+  
+            </div>
+            
+        </div>
+    </main>  
+    
+    <!-- Footer Section-->
+    <footer>
+        <p>SI 339: Web Design, Development, and Asccessibility <br>
+         Winter 2024 - Common Class Project <br>
+         &copy; Maiara Lewis Cipriano</p>
+     </footer>  
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js" defer></script>
+    <title>Pets</title>
+</head>
+<body>
+    <a href = "#main" class="skip-to-main">Skip to Main Content</a>
+
+    <!-- Back to the top floating button -->
+    <button id="top" class="top-button" onclick="backtoTop()"  tabindex="0">Top</button>
+    
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pets.html" class="active">Pets</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        
+    <main>
+        <!--Hero Section-->
+        <div class="hero-image hero-pets">
+            <div class="hero-text">
+                <p class="preheading">Common Class Project</p>
+                <h1>Pets</h1>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <!-- First Section-->
+            <div>
+                <h2>Time to see the cuties!</h2>
+                <p>We are dedicated to show you some of the cutest pets we have ever seen. Here you will find more information about each pet, their story, their favorite likes, and of course, incredible footage of them being cute.</p>
+            </div>
+
+            <!-- Second Section-->
+            <div>
+                <h2>Explore</h2>
+                <p>We have a variety of adorable dogs and cats you can learn more about. Which one do you want to check first?</p>
+
+                <!--Options Filter - This is not function yet-->
+                <div class="filter-div">
+                    <button id="showAll" class="small-btn selected" onclick="showAllCards()">Show all</button>
+                    <button id="cats" class="small-btn" onclick="filterCats()">Cats</button>
+                    <button id="dogs" class="small-btn" onclick="filterDogs()">Dogs</button>
+                </div>
+
+                <!-- All Animals Grid-->
+                <div class="grid-gallery animals">
+
+                    <!--1st Animal-->
+                    <div class="dog">
+                        <div class="small-card">
+                            <a href="#dog1">
+                                <img src="images/bacon_q.png" alt="Brown labradoodle wearing colorful lei">
+                                <div>
+                                    <p>Bacon Q</p>
+                                    <p class="classification">Dog</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--2nd Animal-->
+                    <div class="dog">
+                        <div class="small-card">
+                            <a href="#dog2">
+                                <img src="images/pluto_small.png" alt="White Maltese dog looking up">
+                                <div>
+                                    <p>Pluto</p>
+                                    <p class="classification dog">Dog</p>
+                                </div>
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--3rd Animal-->
+                    <div class="dog">
+                        <div class="small-card">
+                            <a href="#dog4">
+                                <img src="images/cody.png" alt="Corgi creamy and white dog sitting facing the camera">
+                                <div>
+                                    <p>Cody</p>
+                                    <p class="classification dog">Dog</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--4th Animal-->
+                    <div class="dog">
+                        <div class="small-card">
+                            <a href="#dog3">
+                                <img src="images/juno.png" alt="Black and brown dog asleep on his side">
+                                <div>
+                                    <p>Juno</p>
+                                    <p class="classification dog">Dog</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--5th Animal-->
+                    <div class="cat">
+                        <div class="small-card">
+                            <a href="#cat1">
+                                <img src="images/huahua.png" alt="Gray cat with black strips laying on the ground">
+                                <div>
+                                    <p>Hua Hua</p>
+                                    <p class="classification cat">Cat</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Third Section-->
+            <div>
+                <!--Dogs-->
+                <div>
+                    <h2>Dogs</h2>
+                    <p>With their wagging tails and boundless enthusiasm, dogs have earned the title "man's best friend" for millennia. From playful pups to loyal companions, these furry friends offer unconditional love, endless entertainment, and a unique bond that enriches our lives in countless ways.</p>
+
+                    <!--Dog #1-->
+                    <div id="dog1">
+                        <!-- Dog Story -->
+                        <div class="dark-section dark-background-font-color">
+                            <h3>Bacon Q</h3>
+                            <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
+                            <p>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
+                            
+                            <h4> <i class="material-icons">favorite</i>Likes</h4>
+
+                            <!-- Dog Likes -->
+                            <ul>
+                                <li>Belly rubs</li>
+                                <li>Playing tug-of-war</li>
+                                <li>Sneaking onto the couch</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Dog Gallery -->
+                        <div class="grid-gallery">
+                            <div class="photo1">
+                                <img src="images/bacon_bandana.JPG" alt = "Brown labradoodle wearing an orange bandana">
+                            </div>
+                            
+                            <div class="photo2">
+                                <img src="images/bacon_graduation.JPG" alt="Small labradoodle puppy wearing a graduation cap and gown">
+                            </div>
+
+                            <div class="photo3">
+                                <img src="images/bacon_halloween.JPG" alt="Brown labradoodle wearing a pirate costume">
+                            </div>
+
+                            <div class="photo4">
+                                <video controls>
+                                    <source src="images/bacon_agility.mov">
+                                    Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+                                </video>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!--Dog #2-->
+                    <div id="dog2">
+                        <!-- Dog Story -->
+                        <div class="dark-section dark-background-font-color">
+                            <h3>Pluto</h3>
+                            <p>Pluto is a five year old rescue dog of an unknown breed. He was found wandering alone and taken to the Valley Humane Society where he found his new family. From a young age, Pluto always had a special personality, he was known for being very very lazy! He spends most of his time staring out the window to keep watch of his house. Don’t let the laziness fool you because Pluto defends his family from the mailman and squirrels every single day.</p>
+
+                            <p>Aside from his job as defender of the house, Pluto likes to have fun. Pluto’s favorite part of the day is his daily walk. Sometimes he even gets to go to the park and meet his neighbors. He also loves his toy duck, and only his toy duck. As a dog, it's in his nature to hunt and so he makes sure to get some practice with his toy duck.</p>
+                            
+                            <h4> <i class="material-icons">favorite</i>Likes</h4>
+
+                            <!-- Dog Likes -->
+                            <ul>
+                                <li>Eating his bone</li>
+                                <li>Going to the beach</li>
+                                <li>His toy duck</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Dog Gallery -->
+                        <div class="grid-gallery">
+                            <div class="photo1">
+                                <img src="images/pluto_cookie.JPG" alt = "Pluto the dog standing up to eat a cookie">
+                            </div>
+                            
+                            <div class="photo2">
+                                <img src="images/pluto_sleeping.jpg" alt="Pluto sleeping on bed">
+                            </div>
+
+                            <div class="photo3">
+                                <img src="images/pluto_walk.jpg" alt="Pluto the dog on a walking trail">
+                            </div>
+
+                            <div class="photo4">
+                                <img src="images/pluto_sitting.jpg" alt="Pluto sitting and posed on top of a table">
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!--Dog #3-->
+                    <div id="dog3">
+                        <!-- Dog Story -->
+                        <div class="dark-section dark-background-font-color">
+                            <h3>Juno</h3>
+                            <p>No one knows exactly what breed Juno is, but that makes him all the more special. He was adopted before he was one year old; despite this and his German shepherd-esque looks, he stayed close to the same size, hovering around 50 lbs into adulthood. At the weathered age of ten years old, Juno is dealing with hip problems, but manages to stay in good spirits.</p>
+
+                            <p>One of Juno’s favorite pastimes is finding the dirtiest puddle within a one-mile radius and making sure every inch of him makes contact with said puddle. If rolling around in dirt was an Olympic sport, Juno would have been the one that facilitated its inclusion into the Olympics.</p>
+                            
+                            <h4> <i class="material-icons">favorite</i>Likes</h4>
+
+                            <!-- Dog Likes -->
+                            <ul>
+                                <li>Human food</li>
+                                <li>Head pats</li>
+                                <li>Sleeping</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Dog Gallery -->
+                        <div class="grid-gallery">
+                            <div class="photo1">
+                                <img src="images/juno_pup.JPG" alt = "A young black and brown dog with his tongue hanging out">
+                            </div>
+                            
+                            <div class="photo2">
+                                <img src="images/juno_laying.JPG" alt="A black and brown dog laying on a rug">
+                            </div>
+
+                            <div class="photo3">
+                                <img src="images/juno_laying_2.JPG" alt="A black and brown dog laying on a wood floor">
+                            </div>
+
+                            <div class="photo4">
+                                <img src="images/juno_profile.JPG" alt="A profile perspective of a black and brown dog from shoulders up">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Dog #4-->
+                    <div id="dog4">
+                        <!-- Dog Story -->
+                        <div class="dark-section dark-background-font-color">
+                            <h3>Cody</h3>
+                            <p>Cody is a 7yr old Pembroke Corgi. He was born in Cavalier Farms, Seattle. He prefers to spend his days lounging on the bean bag. Every day, he enjoys two walks around the neighborhood and likes to make friends with other doggie friends. If lucky enough, he might see the cyclist, but he is not allowed to give chase.</p>
+
+                            <p>Cody loves traveling. He enjoys walking on the beach and taking sun naps. But he hates cold weather. He would like to stay at home lounging by the fireplace in winter.</p>
+                            
+                            <h4> <i class="material-icons">favorite</i>Likes</h4>
+
+                            <!-- Dog Likes -->
+                            <ul>
+                                <li>Traveling</li>
+                                <li>Lounging</li>
+                                <li>Tennis balls</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Dog Gallery -->
+                        <div class="grid-gallery">
+                            <div class="photo1">
+                                <img src="images/cody_play.jpg" alt = "Cody lying on the ground making faces">
+                            </div>
+                            
+                            <div class="photo2">
+                                <img src="images/cody_deathvalley.jpg" alt="Cody visiting Badwater Basin in Death Valley National Park">
+                            </div>
+
+                            <div class="photo3">
+                                <img src="images/cody_sea.jpg" alt="Cody having a walk by the sea">
+                            </div>
+
+                            <div class="photo4">
+                                <img src="images/cody_fireplace.jpg" alt="Cody lounging by the fireplace in winter">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+               <!--Cats-->
+                <div>
+                    <h3>Cats</h3>
+                    <p>
+                        With their nimble paws and independent spirits, cats have captivated humans for millennia. These furry companions can be playful and cuddly one moment, aloof and mysterious the next, making them endlessly intriguing creatures. Whether basking in a sunbeam or stalking an imaginary foe, cats bring a touch of wonder and joy to our lives.</p>
+
+                     <!--Cat #1-->
+                    <div id="cat1">
+                        <!-- Cat Story -->
+                        <div class="dark-section dark-background-font-color">
+                            <h3>Hua Hua</h3>
+                            <p>Huahua is a three-year-old kitten with gray and black hair. She is a very fond cat, often come to my desk to play with me when I do my homework, and often like to rub my side when I watch TV or play mobile phone. At the same time, she is also very warm, every time when guests come to our home to play, she will get along well with the guests.</p> 
+
+                            <p>Unlike other cats who is very afraid of getting out of the house, Hua Hua is very interested in exploring the outside world. Evry time when my parents are preparing for a walking at the door, she will come and continue spinning, express her wish to go out with my parents. </p>
+                            
+                            <h4> <i class="material-icons">favorite</i>Likes</h4>
+
+                            <!-- Cat Likes -->
+                            <ul>
+                                <li>Chicken Breast</li>
+                                <li>Salmon</li>
+                                <li>Beef</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Cat Gallery -->
+                        <div class="grid-gallery">
+                            <div class="photo1">
+                                <video controls>
+                                    <source src="images/Hua_Hua_curling_up.mp4">
+                                    Your browser does not support the video tag.This is a video of a gray and black cat curling up in a bowl
+                                </video>
+                            </div>
+
+                            <div class="photo2">
+                                <img src="images/Hua_Hua_in_bed.jpg" alt="White and gray with black stripes cat laying in its bed with belly up">
+                            </div>
+                            
+                            <div class="photo3">
+                                <video controls>
+                                    <source src="images/Hua_Hua_staring_you.mp4">
+                                    Your browser does not support the video tag. This was a video of a gray and black kitten starting at you
+                                </video>
+                            </div>
+
+                            <div class="photo4">
+                                <video controls>
+                                    <source src="images/Hua_Hua_coquetry.mp4">
+                                    Your browser does not support the video tag. This was a video of a gray kitten laying and stretching in a bed
+                                </video>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+
+            
+    </main>
+    <!-- Footer Section-->
+    <footer>
+        <p>SI 339: Web Design, Development, and Asccessibility <br>
+         Winter 2024 - Common Class Project <br>
+         &copy; Maiara Lewis Cipriano</p>
+    </footer>
+    
+</body>
+</html>

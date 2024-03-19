@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <title>Travel</title>
+</head>
+
+<body>
+    <a href = "#main" class="skip-to-main">Skip to Main Content</a>
+
+    <!-- Back to the top floating button -->
+    <button id="top" class="top-button" onclick="backtoTop()"  tabindex="0">Top</button>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="travel.html" class="active">Travel</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Hero Section-->
+        <div class="hero-image hero-travel">
+            <div class="hero-text">
+                <p class="preheading">Common Class Project</p>
+                <h1>Travel</h1>
+            </div>
+        </div>
+
+        <!-- First Section -->
+        <div id="main">
+            <h2>Let's explore!</h2>
+            <p>Feeling the itch to explore? Let's turn that travel dream into reality! Our page is packed with inspiration for every kind of adventurer, from mountain climbers to beach bums. We'll share unique destinations, insider tips, and budget-friendly ideas to get you started.
+            <br> Want to soak up culture? We've got you covered. Craving delicious food? We know just the spot. So grab your backpack, book your ticket, and get ready to create memories that last a lifetime!</p>
+
+            <h3>Pick a place</h3>
+
+            <!-- All Places Grid-->
+            <div class="grid-gallery travel">
+
+                <!--1st Place-->
+                <div class="small-card">
+                    <a href="#paris">
+                        <img src="images/montmatre.webp" alt="a corner with a view of a restaurant and the Sacre-Coeur in the horizon">
+                        <p>Montmartre</p>
+                    </a>
+                </div>
+
+                <!--2nd Place-->
+                <div class="small-card">
+                    <a href="#rio">
+                        <img src="images/rio.jpeg" alt="the Christ Redeemer statue on a mountain with a city and water in the background">
+                        <p>Rio</p>
+                    </a>
+                </div>
+
+                <!--3rd Place-->
+                <div class="small-card">
+                    <a href="#rome">
+                        <img src="images/rome.jpeg" alt="a stone walkway leading to the Colosseum">
+                        <p>Rome</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div>
+                <!--Location #1-->
+                <div class="bordered-section" id="paris">
+                    <h2>Montmartre, Paris</h2>
+                    <img src="images/mont.jpeg" alt="front view of the Sacre-Coeur">
+
+                    <!-- Location Info -->
+                    <h3>Geographical Location: Europe</h3>
+                    <p>
+                        Montmartre is a large hill in Paris's northern 18th arrondissement. It is 130 m high and gives its name to the surrounding district, part of the Right Bank. Montmartre is primarily known for its artistic history, for the white-domed Basilica of the Sacré-Cœur on its summit, and as a nightclub district.
+                    </p>
+                    <p>
+                        Montmartre is talked about by Parisians the way New Yorkers talk about the Village: It's not what it used to be, It's like Disneyland, the artists can't afford to live here anymore, too many tourists etc. There is some truth to these opinions, but there are two ways of approaching this incredibly unique village within the metropolis. The first is to follow the herd instinct and stampede your way up the famous hill, take a picture of yourself on the steps of the basilica, buy an overpriced crepe at the Place du Tertre, get conned into having your portrait sketched, and walk back down clutching newly bought key-rings, postcards, gaudy T-shirts feeling a little mystified about what all the fuss is about.
+                    </p>
+
+                    <!-- Location Gallery -->
+                    <div class="grid-gallery">
+                        <div class="photo1">
+                            <img src="images/montmartre_pink.jpeg" alt = "A stone road in Montmartre with buildings and trees.">
+                        </div>
+                        
+                        <div class="photo2">
+                            <img class ="remove-gif" src="images/montmartre.gif" alt="moving image of people walking in front of the Sacre-Coeur">
+                        </div>
+
+                        <div class="photo3">
+                            <img src="images/montmartre_past.jpeg" alt="a black and white photo of a building in Montmartre in older days">
+                        </div>
+
+                        <div class="photo4">
+                            <img src="images/paris_artists.jpeg" alt="an artist with a red jacket painting a canvas in the street">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Location #2-->
+                <div class="bordered-section" id="rio">
+                    <h2>Rio, Brazil</h2>
+                    <img src="images/rio-hero.jpg" alt="moving image of panoramic Rio from day to night time">
+
+                    <!-- Location Info -->
+                    <h3>Geographical Location: South America</h3>
+                    <p>
+                        Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns). Its raucous Carnaval festival, featuring parade floats, flamboyant costumes and samba dancers, is considered the world’s largest.
+                    </p>
+                    <p>
+                        Rio de Janeiro is home to some of the world’s friendliest people and most beautiful beaches. Brazil’s interracial history of Portuguese, Japanese, Indian, and German settlers has created a multicultural society, which has led to festivals and celebrations that are known all over the world.
+        
+                        A city break in Rio de Janeiro presents a colorful cityscape of green mountains overlooking blue seas and long, sandy beaches. Expansive hotels and resorts line the seafronts of Ipanema and Copacabana, where sunny days drift into balmy evenings filled with street parties and loud music. From seeing the stunning Christ the Redeemer statue atop Mount Corcovado to learning to samba, check out our guide of things to do in Rio de Janeiro.
+                    </p>
+
+                    <!-- Location Gallery -->
+                    <div class="grid-gallery">
+                        <div class="photo1">
+                            <img src="images/rio-surf.jpeg" alt = "A beach with surf boards and mountains in the horizon">
+                        </div>
+                        
+                        <div class="photo2">
+                            <img src="images/beach.webp" alt="a beach with buildings and a body of water">
+                        </div>
+
+                        <div class="photo3">
+                            <img src="images/ipanema.webp" alt="Ipanema beach with people and buildings in the background">
+                        </div>
+
+                        <div class="photo4">
+                            <img src="images/rio-christ.jpeg" alt="the Christ Redeemer statue on a mountain with a city and water in the background.">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Location #3-->
+                <div class="bordered-section" id="rome">
+                    <h2>Rome, Italy</h2>
+                    <img src="images/rome.jpeg" alt="a stone walkway leading to the Colosseum">
+
+                    <!-- Location Info -->
+                    <h3>Geographical Location: Europe</h3>
+                    <p>
+                        Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome Capital, and a special comune named Comune di Roma Capitale.
+                    </p>
+                    <p>
+                        For well over a millennium, Rome controlled the destiny of all civilization known to Europe, but then it fell into dissolution and disrepair. Physically mutilated, economically paralyzed, politically senile, and militarily impotent by the late Middle Ages, Rome nevertheless remained a world power—as an idea. The force of Rome the lawgiver, teacher, and builder continued to radiate throughout Europe. Although the situation of the popes from the 6th to the 15th century was often precarious, Rome knew glory as the fountainhead of Christianity and eventually won back its power and wealth and reestablished itself as a place of beauty, a source of learning, and a capital of the arts.
+                    </p>
+
+                    <!-- Location Gallery -->
+                    <div class="grid-gallery">
+                        <div class="photo1">
+                            <img src="images/rome-colesseum.jpeg" alt = "Sun shining of part of the Colosseum">
+                        </div>
+                        
+                        <div class="photo2">
+                            <img class="remove-gif" src="images/rome.gif" alt="moving of water falling in the Trevi Fountain">
+                        </div>
+
+                        <div class="photo3">
+                            <img src="images/vatican.jpeg" alt="a large building with a dome and a street in front in the Vatican City">
+                        </div>
+
+                        <div class="photo4">
+                            <img src="images/rome-art.jpeg" alt="a roman statue">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    
+    <!-- Footer Section-->
+    <footer>
+        <p>SI 339: Web Design, Development, and Asccessibility <br>
+         Winter 2024 - Common Class Project <br>
+         &copy; Maiara Lewis Cipriano</p>
+     </footer>
+    
+</body>
+</html>
